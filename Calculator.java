@@ -4,7 +4,7 @@ public class Calculator
 {
 	public static void main(String[] args)
 	{
-		Scanner s = new Scanner(System.in);
+		
 		
 		int n1, n2;
 		int ans = 1, c = 0;
@@ -20,17 +20,17 @@ public class Calculator
 			switch(ch)
 			{
 			case 1:
-				System.out.println("Enter any two Numbers :");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				
+				n1 = 5;
+				n2 = 5;
 				
 				c = n1+ n2;
 				System.out.println("Addition of "+n1+" and "+n2+" is "+c);
 			
 			case 2:
-				System.out.println("Enter any two Numbers :");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				
+				n1 = 10;
+				n2 = 5;
 				if(n1 > n2)
 				{
 					c = n1 - n2;
@@ -42,17 +42,17 @@ public class Calculator
 				System.out.println("Subtraction of "+n1+" and "+n2+" is "+c);
 				
 			case 3:
-				System.out.println("Enter any two Numbers :");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				
+				n1 = 5;
+				n2 = 5;
 				
 				c = n1 * n2;
 				System.out.println("Multiplication of "+n1+" and "+n2+" is "+c);
 			
 			case 4:
-				System.out.println("Enter any two Numbers :");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				
+				n1 = 5;
+				n2 = 8;
 				
 				if(n2==0)
 				{
