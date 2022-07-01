@@ -1,83 +1,39 @@
-import java.util.Scanner;
-
 public class Calculator 
 {
+	public void add()
+	{
+		int a= 20;
+		int b = 10;
+		int res = a + b;
+		System.out.println("Addition : "+res);
+	}
+	public void sub()
+	{
+		int a= 20;
+		int b = 10;
+		int res = a - b;
+		System.out.println("Subtraction : "+res);
+	}
+	public void mul()
+	{
+		int a= 20;
+		int b = 10;
+		int res = a * b;
+		System.out.println("Multiplication : "+res);
+	}
+	public void div()
+	{
+		int a= 20;
+		int b = 10;
+		int res = a / b;
+		System.out.println("Division : "+res);
+	}
 	public static void main(String[] args)
 	{
-		
-		
-		int n1, n2;
-		int ans = 1, c = 0;
-		int ch;
-		
-		do
-		{
-			System.out.println("1. Addition\n 2. Subtraction\n 3.Multiplication\n 4.Division\n e.Exit\n");
-			
-			System.out.print("Enter Your Choice :");
-			ch = s.nextInt();
-			
-			switch(ch)
-			{
-			case 1:
-				
-				n1 = 5;
-				n2 = 5;
-				
-				c = n1+ n2;
-				System.out.println("Addition of "+n1+" and "+n2+" is "+c);
-			
-			case 2:
-				
-				n1 = 10;
-				n2 = 5;
-				if(n1 > n2)
-				{
-					c = n1 - n2;
-				}
-				else
-				{
-					c = n2 - n1;
-				}
-				System.out.println("Subtraction of "+n1+" and "+n2+" is "+c);
-				
-			case 3:
-				
-				n1 = 5;
-				n2 = 5;
-				
-				c = n1 * n2;
-				System.out.println("Multiplication of "+n1+" and "+n2+" is "+c);
-			
-			case 4:
-				
-				n1 = 5;
-				n2 = 8;
-				
-				if(n2==0)
-				{
-					System.out.println("Denominater Should not be zero.");
-				}
-				else
-				{
-					c = n1/n2;
-					System.out.println("Division of "+n1+" and "+n2+" is "+c);
-				}
-				
-				break;
-				
-			case 5:
-				System.exit(0);
-				break;
-			
-			default :
-				System.out.println("Wrong Choice...");
-			}
-			
-			System.out.println("Do you want to continue ?(1/0)");
-			ans = s.nextInt();
-				
-		}while(ans != 0);
+		Calculator d = new Calculator();
+		d.add();
+		d.sub();
+		d.mul();
+		d.div();
 	}
-
 }
